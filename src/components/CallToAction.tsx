@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageSquare } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -57,13 +58,17 @@ const CallToAction = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" className="group min-w-[200px]">
-              Contact Us
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="xl" className="min-w-[200px]">
-              View Documentation
-            </Button>
+            <Link to="/contact">
+              <Button variant="hero" size="xl" className="group min-w-[200px]">
+                Contact Us
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/docs">
+              <Button variant="heroOutline" size="xl" className="min-w-[200px]">
+                View Documentation
+              </Button>
+            </Link>
           </div>
 
           {/* Trust badges */}

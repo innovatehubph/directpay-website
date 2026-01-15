@@ -10,7 +10,7 @@ const features = [
   {
     icon: Shield,
     title: "Secure by Design",
-    description: "PCI-DSS compliant infrastructure with enterprise-grade encryption",
+    description: "PCI-DSS 4.0.1 certified infrastructure with enterprise-grade encryption",
   },
   {
     icon: TrendingUp,

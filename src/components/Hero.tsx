@@ -1,7 +1,50 @@
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useRef, useEffect, useState } from "react";
 import heroIllustration from "@/assets/hero-illustration.png";
+
+// Animated counter hook
+const useCounter = (end: number, duration: number = 2000, start: number = 0, decimals: number = 0) => {
+  const [count, setCount] = useState(start);
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    let startTime: number | null = null;
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const value = easeOutQuart * (end - start) + start;
+      setCount(decimals > 0 ? parseFloat(value.toFixed(decimals)) : Math.floor(value));
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [end, duration, start, isInView, decimals]);
+
+  return { count, ref };
+};
+
+// Stat item component
+const StatItem = ({ value, suffix, label, decimals = 0 }: { value: number; suffix: string; label: string; decimals?: number }) => {
+  const { count, ref } = useCounter(value, 2000, 0, decimals);
+  return (
+    <div ref={ref}>
+      <div className="text-2xl lg:text-3xl font-bold text-white">
+        {count}{suffix}
+      </div>
+      <div className="text-sm text-white/50">{label}</div>
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
@@ -77,14 +120,18 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="hero" size="xl" className="group">
-                View Integration Guide
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="heroOutline" size="xl" className="group">
-                <Play className="w-4 h-4" />
-                Watch Demo
-              </Button>
+              <Link to="/docs">
+                <Button variant="hero" size="xl" className="group">
+                  View Integration Guide
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="heroOutline" size="xl" className="group">
+                  <Play className="w-4 h-4" />
+                  Get Started
+                </Button>
+              </Link>
             </motion.div>
 
             {/* Stats */}
@@ -94,16 +141,9 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10"
             >
-              {[
-                { value: "99.9%", label: "Uptime SLA" },
-                { value: "< 100ms", label: "Latency" },
-                { value: "50M+", label: "Transactions" },
-              ].map((stat, index) => (
-                <div key={index}>
-                  <div className="text-2xl lg:text-3xl font-bold text-white">{stat.value}</div>
-                  <div className="text-sm text-white/50">{stat.label}</div>
-                </div>
-              ))}
+              <StatItem value={200} suffix="+" label="Payment Methods" />
+              <StatItem value={50} suffix="+" label="Countries" />
+              <StatItem value={99.9} suffix="%" label="Uptime SLA" decimals={1} />
             </motion.div>
           </div>
 
@@ -123,6 +163,8 @@ const Hero = () => {
                 src={heroIllustration}
                 alt="Payment illustration"
                 className="w-full max-w-2xl rounded-2xl drop-shadow-2xl"
+                loading="eager"
+                decoding="async"
               />
               
               {/* Floating badge */}

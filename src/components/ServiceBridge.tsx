@@ -1,5 +1,6 @@
 import { QrCode, Zap, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -68,12 +69,12 @@ const ServiceBridge = () => {
                 {service.description}
               </p>
               <div className="mt-6 pt-6 border-t border-border/50">
-                <a href="#" className="text-primary font-medium text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                <Link to="/docs" className="text-primary font-medium text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all">
                   Learn more
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
+
+// Import partner logos
+import v5payLogo from "@/assets/partners/v5pay.svg";
+import instapayLogo from "@/assets/partners/instapay.svg";
+import metrobankLogo from "@/assets/partners/metrobank.png";
+import bpiLogo from "@/assets/partners/bpi.svg";
+import gcashLogo from "@/assets/partners/gcash.svg";
+import mayaLogo from "@/assets/partners/maya.svg";
 
 const benefits = [
   "Unified QRPH - One integration for all banks and wallets",
@@ -11,12 +20,12 @@ const benefits = [
 ];
 
 const partners = [
-  { name: "V5 Pay", color: "bg-primary" },
-  { name: "InstaPay", color: "bg-green-500" },
-  { name: "MetroBank", color: "bg-red-500" },
-  { name: "BPI", color: "bg-red-600" },
-  { name: "GCash", color: "bg-blue-500" },
-  { name: "Maya", color: "bg-green-600" },
+  { name: "V5 Pay", logo: v5payLogo, bgColor: "bg-white" },
+  { name: "InstaPay", logo: instapayLogo, bgColor: "bg-white" },
+  { name: "MetroBank", logo: metrobankLogo, bgColor: "bg-white" },
+  { name: "BPI", logo: bpiLogo, bgColor: "bg-white" },
+  { name: "GCash", logo: gcashLogo, bgColor: "bg-white" },
+  { name: "Maya", logo: mayaLogo, bgColor: "bg-white" },
 ];
 
 const PartnerBenefits = () => {
@@ -72,7 +81,7 @@ const PartnerBenefits = () => {
               <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
                 Trusted by Leading Financial Institutions
               </h3>
-              
+
               <div className="grid grid-cols-3 gap-6">
                 {partners.map((partner, index) => (
                   <motion.div
@@ -84,10 +93,12 @@ const PartnerBenefits = () => {
                     whileHover={{ scale: 1.05 }}
                     className="flex flex-col items-center gap-3 p-4 rounded-xl hover:bg-muted transition-colors cursor-pointer"
                   >
-                    <div className={`w-14 h-14 ${partner.color} rounded-xl flex items-center justify-center shadow-lg`}>
-                      <span className="text-white font-bold text-lg">
-                        {partner.name.charAt(0)}
-                      </span>
+                    <div className={`w-16 h-16 ${partner.bgColor} rounded-xl flex items-center justify-center shadow-md overflow-hidden p-2`}>
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <span className="text-sm font-medium text-foreground">{partner.name}</span>
                   </motion.div>
@@ -99,16 +110,18 @@ const PartnerBenefits = () => {
                   <p className="text-muted-foreground text-sm mb-4">
                     Join 100+ payment partners in the Philippines
                   </p>
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="text-primary font-semibold text-sm inline-flex items-center gap-2"
-                  >
-                    Become a Partner
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </motion.button>
+                  <Link to="/contact">
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="text-primary font-semibold text-sm inline-flex items-center gap-2"
+                    >
+                      Become a Partner
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </motion.button>
+                  </Link>
                 </div>
               </div>
             </div>

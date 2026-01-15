@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="804"
+   height="188"
+   viewBox="0 0 804 188"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="v5pay-site-logo.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.8896484"
+     inkscape:cx="512"
+     inkscape:cy="199.77261"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1432"
+     inkscape:window-y="1127"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <title
+     id="title1">白底-横向logo</title>
+  <defs
+     id="defs8">
+    <path
+       d="M 55.099,0 84.180501,62.196635 84.112366,62.358971 113.639,124.302 90.5,167 0,0 Z M 181,0 121.075,110.579 98.000501,60.523635 126.3,0 Z"
+       id="path-1" />
+    <linearGradient
+       x1="121.92835"
+       y1="92.847076"
+       x2="115.44064"
+       y2="119.80447"
+       id="linearGradient-3"
+       gradientTransform="scale(0.83825561,1.1929535)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#FFFFFF"
+         offset="0%"
+         id="stop1" />
+      <stop
+         stop-color="#3B4EFF"
+         stop-opacity="0"
+         offset="100%"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       x1="54.046398"
+       y1="3.5494411"
+       x2="49.397984"
+       y2="50.957024"
+       id="linearGradient-4"
+       gradientTransform="scale(1.0474714,0.95468003)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#FFFFFF"
+         offset="0%"
+         id="stop3" />
+      <stop
+         stop-color="#3B4EFF"
+         stop-opacity="0"
+         offset="100%"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       x1="179.46413"
+       y1="16.070555"
+       x2="193.48015"
+       y2="53.500462"
+       id="linearGradient-5"
+       gradientTransform="scale(0.79532554,1.2573468)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#FFFFFF"
+         offset="0%"
+         id="stop5" />
+      <stop
+         stop-color="#3B4EFF"
+         stop-opacity="0"
+         offset="100%"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       x1="133.27182"
+       y1="20.849659"
+       x2="166.09888"
+       y2="50.800804"
+       id="linearGradient-6"
+       gradientTransform="scale(0.98035821,1.0200353)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#FFFFFF"
+         offset="0%"
+         id="stop7" />
+      <stop
+         stop-color="#3B4EFF"
+         stop-opacity="0"
+         offset="100%"
+         id="stop8" />
+    </linearGradient>
+    <polygon
+       id="path-7"
+       points="0,0 152,0 152,169 0,169 " />
+  </defs>
+  <g
+     id="白底-横向logo"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(-111,-107)">
+    <g
+       id="编组-4"
+       transform="translate(111,107)">
+      <g
+         id="编组-3">
+        <path
+           d="m 325,0 -6.00604,34.67773 h -72.07848 l -5.54473,31.906348 c 7.16081,-6.70593 19.40505,-11.559243 32.80406,-11.559243 36.73271,0 45.97393,27.973308 41.12267,55.254145 C 309.06078,145.88151 284.1095,169 246.68483,169 208.79734,169 190.77772,147.96194 194.4727,118.83301 h 38.34879 c 0.23216,8.78484 5.54624,16.64488 18.48244,16.64488 15.0166,0 23.3337,-10.86526 26.10606,-25.43124 2.5402,-15.258441 -3.46583,-23.349307 -17.78897,-23.349307 -11.08946,0 -18.48093,6.010444 -21.94676,13.870487 H 199.55612 L 217.11444,0 Z"
+           id="Fill-2"
+           fill="#157ef5" />
+        <g
+           id="路径-2备份"
+           transform="translate(0,1)">
+          <mask
+             id="mask-2"
+             fill="#ffffff">
+            <use
+               xlink:href="#path-1"
+               id="use8" />
+          </mask>
+          <use
+             id="蒙版"
+             fill="#157ef5"
+             xlink:href="#path-1" />
+          <polygon
+             id="路径-2"
+             fill="url(#linearGradient-3)"
+             opacity="0.2"
+             mask="url(#mask-2)"
+             points="76.530201,160.30885 86.544436,182.73188 119.04698,128.94837 107.72936,106.49275 "
+             style="fill:url(#linearGradient-3)" />
+          <polygon
+             id="路径-3"
+             fill="url(#linearGradient-4)"
+             opacity="0.303223"
+             mask="url(#mask-2)"
+             points="56.36673,-1.2101449 25.510067,52.036232 82.604027,49.996513 "
+             style="fill:url(#linearGradient-4)" />
+          <polygon
+             id="路径-5"
+             fill="url(#linearGradient-5)"
+             opacity="0.135742"
+             mask="url(#mask-2)"
+             points="125.12081,-1.0159708 145.73868,88.34058 183.42953,-1.2101449 "
+             style="fill:url(#linearGradient-5)" />
+          <polygon
+             id="路径-4"
+             fill="url(#linearGradient-6)"
+             opacity="0.391904"
+             mask="url(#mask-2)"
+             points="161.22122,56.876812 184.64429,-0.27092831 152.72284,-4.8405797 126.33557,0.34986406 "
+             style="fill:url(#linearGradient-6)" />
+        </g>
+      </g>
+      <g
+         id="编组-2"
+         transform="translate(338,16)">
+        <g
+           id="编组">
+          <mask
+             id="mask-8"
+             fill="#ffffff">
+            <use
+               xlink:href="#path-7"
+               id="use9" />
+          </mask>
+          <g
+             id="Clip-5" />
+          <path
+             d="m 89.867483,33.16793 c -14.569547,0 -29.364366,10.90733 -32.951167,30.717448 -3.588262,19.81157 7.395947,30.718901 21.743148,30.718901 14.57101,0 29.589636,-11.129574 33.177906,-30.941144 C 115.19889,43.851565 104.21468,33.16793 89.867483,33.16793 M 106.90478,0 c 30.71161,0 50.66136,24.485933 43.71157,63.663135 -6.94833,39.177205 -35.64127,64.107625 -66.352876,64.107625 -18.380157,0 -30.037258,-8.682 -35.193649,-19.14339 L 38.33283,169.00044 H 0 L 29.566234,1.7823005 H 67.899063 L 64.761345,19.365632 C 73.728345,8.4583014 88.523164,0 106.90478,0"
+             id="Fill-4"
+             fill="#393c4c"
+             mask="url(#mask-8)" />
+        </g>
+        <path
+           d="m 237.91406,33.227439 c -14.30734,0 -29.28424,10.702804 -32.63789,30.549919 -3.57538,19.847116 7.37832,30.996658 21.6842,30.996658 14.53052,0 29.28278,-10.9269 32.86107,-30.774016 3.57683,-19.845661 -7.37686,-30.772561 -21.90738,-30.772561 M 232.5488,0 c 18.55374,0 30.17845,8.4734772 35.09733,19.400377 L 270.77367,1.7854983 H 309 L 286.87089,126.21596 H 248.6431 l 3.35365,-17.61634 C 243.05466,119.52652 228.30095,128 209.74721,128 179.34558,128 159.4498,103.02485 166.38028,63.777358 173.3093,24.529865 201.92252,0 232.5488,0"
+           id="Fill-6"
+           fill="#393c4c" />
+        <polygon
+           id="Fill-8"
+           fill="#393c4c"
+           points="365.86897,2 381.08587,80.048002 423.60146,2 465,2 364.17366,170 323,170 352.89205,122.54017 323.35337,2 " />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>白底-横向logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
